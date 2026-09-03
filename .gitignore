@@ -1,8 +1,33 @@
 .venv/
+.uv-cache/
+.uv-python/
 .lab28/
 __pycache__/
 *.pyc
 .pytest_cache/
 .ruff_cache/
-evidence/
 readiness-report.json
+
+# Local secrets and machine-specific environment overrides.
+.env
+.env.*
+!.env.example
+!.env.template
+
+# Test, coverage, type-checker, and packaging output.
+.coverage
+.coverage.*
+htmlcov/
+.mypy_cache/
+.tox/
+.nox/
+build/
+dist/
+*.egg-info/
+
+# Local logs and editor/OS metadata.
+*.log
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
